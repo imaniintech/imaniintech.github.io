@@ -14,13 +14,14 @@ document.addEventListener('DOMContentLoaded', () => {
         // alert('You have clicked square ' + i)
 
         //function:
-        if (currentPlayer == 1) {
+        if (currentPlayer === 1) {
+            // ref https://www.youtube.com/watch?v=XYzSyPlY7_E & https://www.youtube.com/watch?v=IKzlUvYSZO4 for adding class in js - classList.add 
             token[i].classList.add('player-one')
             token[i].classList.add('not-available')
             currentPlayer = 2
             playerOnBoard.innerHTML = currentPlayer
             }
-        if (currentPlayer == 2) {
+        if (currentPlayer === 2) {
                 token[i].classList.add('player-two')
                 token[i].classList.add('not-available')
                 currentPlayer = 1
