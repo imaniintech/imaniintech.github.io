@@ -1,10 +1,10 @@
 
 //Grab the game-board, the components, player and the outcome from html doc to load into JS
+let currentPlayer = 1
 document.addEventListener('DOMContentLoaded', () => {
     const token = document.querySelectorAll('.game-board div')
-    // const outcome = document.querySelector('#outcome')
+    // const outcome = document.querySelector('#outcome')  // ** note to self-still come back when wirking on win scenario 
     const playerOnBoard = document.querySelector('#current-player')
-    let currentPlayer = 1
 
 
 
@@ -20,7 +20,12 @@ document.addEventListener('DOMContentLoaded', () => {
             currentPlayer = 2
             playerOnBoard.innerHTML = currentPlayer
             }
+        if (currentPlayer == 2) {
+                token[i].classList.add('player-two')
+                token[i].classList.add('not-available')
+                currentPlayer = 1
+                playerOnBoard.innerHTML = currentPlayer
+            }
         }
     }
-
 }); 

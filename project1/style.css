@@ -23,6 +23,10 @@ body{
 .player-one{
     border-radius: 25px;
     background-color: yellowgreen;
+    /* border: solid 1px black; */
+    /* ***note to self: make grid little larger if I want to style each token with border (pixels take
+    up space therefore leading to wider/higher grid. Thinking to just take 1px+ amount of token pieces * 2 since it'll 
+    effect w/h  */
 }
 
 .player-two{
