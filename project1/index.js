@@ -6,9 +6,20 @@
 // // let playerTwo = 2;
 document.addEventListener('DOMContentLoaded', () => { //listens for when content on dumb has loaded
     const token = document.querySelectorAll('.game-board div')
-    const playerOnBoard = document.querySelector('#player-turn')
+    // const playerOnBoard = document.querySelector('#player-turn')
 
     
+
+/* Layout of game board's grid using index 
+        [0, 1, 2, 3, 4, 5, 6]
+        [7, 8, 9, 10, 11, 12, 13]
+        [14, 15, 16, 17, 18, 19, 20]
+        [21, 22, 23, 24, 25, 26, 27]
+        [28, 29, 30, 31, 32, 33, 34]
+        [35, 36, 37, 38, 39, 40, 41]
+*/
+
+
 // create an array of arrays of all possibility of a win in the game board grid 
     const winScenarios = [
 
@@ -27,6 +38,13 @@ document.addEventListener('DOMContentLoaded', () => { //listens for when content
         [41, 40, 39, 38]
 
         // Horiizontal Inbetween
+        [7, 14, 21, 28]
+        [8, 15, 22, 29]
+        [9, 16, 23, 30]
+        [10, 17, 24, 31]
+        [11, 18, 25, 32]
+        [12, 19, 26, 33]
+        [13, 20, 27, 34]
 
 
 
@@ -51,14 +69,6 @@ document.addEventListener('DOMContentLoaded', () => { //listens for when content
 
     ]
 
-/* Layout of game board's grid using index 
-        [0, 1, 2, 3, 4, 5, 6]
-        [7, 8, 9, 10, 11, 12, 13]
-        [14, 15, 16, 17, 18, 19, 20]
-        [21, 22, 23, 24, 25, 26, 27]
-        [28, 29, 30, 31, 32, 33, 34]
-        [35, 36, 37, 38, 39, 40, 41]
-*/
 
 
 
