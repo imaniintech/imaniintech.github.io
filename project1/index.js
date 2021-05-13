@@ -6,7 +6,9 @@
 // // let playerTwo = 2;
 document.addEventListener('DOMContentLoaded', () => { //listens for when content on dumb has loaded
     const token = document.querySelectorAll('.game-board div')
-    // const playerOnBoard = document.querySelector('#player-turn')
+    const tomato = document.querySelector('.player-one')
+    const yellowGreen = document.querySelector('player-two')
+    const playerOnBoard = document.querySelector('#player-turn')
 
 
 
@@ -15,9 +17,9 @@ document.addEventListener('DOMContentLoaded', () => { //listens for when content
     const winScenarios = [
 
         //Horizontal / reverse
-        [0, 1, 2, 3],
-        [6, 5, 4, 3],
-        [7, 8, 9, 10],
+        [0, 1, 2, 3]
+        [6, 5, 4, 3]
+        [7, 8, 9, 10]
         [13, 12, 11, 10]
         [14, 15, 16, 17]
         [20, 19, 18, 17]
@@ -37,9 +39,7 @@ document.addEventListener('DOMContentLoaded', () => { //listens for when content
         [12, 19, 26, 33]
         [13, 20, 27, 34]
 
-
-
-         //Vertical
+        //Vertical
          [0, 7, 14, 21]
          [35, 28, 21, 14]
          [1, 8, 15, 22]
@@ -55,9 +55,7 @@ document.addEventListener('DOMContentLoaded', () => { //listens for when content
          [6, 13, 20, 27]
          [41, 34, 27, 20]
  
-
-
-        //Diagonal / reverse 
+        //Diagonal / reverse  / inbetween
         [14, 22, 30, 38]
         [7, 15, 23, 31]
         [39, 31, 23, 15]
@@ -82,15 +80,22 @@ document.addEventListener('DOMContentLoaded', () => { //listens for when content
 */
     ]
 
+    let wins = () => {
+        for (let w = 0; y < winScenarios.length; w++){
+            
+        }
+    }
 
 
 
 
     let playerTurn = 1;
+ 
 
-   
+
+     // to add event listener to token on my grid by using a for loop, I referenced https://stackoverflow.com/questions/8801787/get-index-of-clicked-element-using-pure-javascript 
     //function: for each token in the game board, loop a event listener click to click each token.
-    for (let i = 0; i <= token.length; i++){
+    for (let i = 0; i < token.length; i++){
         token[i].onclick = () => {
         // alert('Square ' + i + ' was clicked.')
         /* the if statement passed through from class non-available in my html that states if the token isn't clicked at i+7 or 7=the last of the grid components, 
@@ -98,15 +103,19 @@ document.addEventListener('DOMContentLoaded', () => { //listens for when content
         if (token[i + 7].classList.contains('not-available')) {
         
             if (playerTurn === 1) {
-            // ref https://www.youtube.com/watch?v=XYzSyPlY7_E & https://www.youtube.com/watch?v=IKzlUvYSZO4 for adding class in js - classList.add 
-            token[i].classList.add('player-one')
-            token[i].classList.add('not-available')
-            playerTurn = 2
-            playerOnBoard.innerHTML = playerTurn
+            // referenced https://www.youtube.com/watch?v=XYzSyPlY7_E & https://www.youtube.com/watch?v=IKzlUvYSZO4 for adding class in js - classList.add 
+                token[i].classList.add('player-one')
+                token[i].classList.add('not-available')
+                playerTurn = 2
+                playerOnBoard.innerHTML = playerTurn
+            // console.log(grid)
             }
+    
             else if (playerTurn === 2) {
+            
                 token[i].classList.add('player-two')
                 token[i].classList.add('not-available')
+                
                 playerTurn = 1
                 playerOnBoard.innerHTML = playerTurn
                 }
