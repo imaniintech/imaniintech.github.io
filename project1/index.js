@@ -8,22 +8,13 @@ document.addEventListener('DOMContentLoaded', () => { //listens for when content
     const token = document.querySelectorAll('.game-board div')
     // const playerOnBoard = document.querySelector('#player-turn')
 
-    
 
-/* Layout of game board's grid using index 
-        [0, 1, 2, 3, 4, 5, 6]
-        [7, 8, 9, 10, 11, 12, 13]
-        [14, 15, 16, 17, 18, 19, 20]
-        [21, 22, 23, 24, 25, 26, 27]
-        [28, 29, 30, 31, 32, 33, 34]
-        [35, 36, 37, 38, 39, 40, 41]
-*/
 
 
 // create an array of arrays of all possibility of a win in the game board grid 
     const winScenarios = [
 
-        //Horizontal -reverse
+        //Horizontal / reverse
         [0, 1, 2, 3],
         [6, 5, 4, 3],
         [7, 8, 9, 10],
@@ -66,7 +57,29 @@ document.addEventListener('DOMContentLoaded', () => { //listens for when content
  
 
 
+        //Diagonal / reverse 
+        [14, 22, 30, 38]
+        [7, 15, 23, 31]
+        [39, 31, 23, 15]
+        [0, 8, 16, 24]
+        [40, 32, 24, 16]
+        [8, 16, 24, 32]
+        [1, 9, 17, 25]
+        [41, 33, 25, 17]
+        [9, 17, 25, 33]
+        [2, 10, 18, 26]
+        [34, 26, 18, 10]
+        [3, 11, 19, 27]
 
+
+         /* Layout of game board's grid using index 
+        [0,  1,  2,  3,  4,  5,   6]
+        [7,  8,  9,  10, 11, 12, 13]
+        [14, 15, 16, 17, 18, 19, 20]
+        [21, 22, 23, 24, 25, 26, 27]
+        [28, 29, 30, 31, 32, 33, 34]
+        [35, 36, 37, 38, 39, 40, 41]
+*/
     ]
 
 
