@@ -10,8 +10,12 @@
 </head>
 <body>
     <h1>Connect 4</h1>
-    <h2 class="current=player"></h2>
-    <h3 id="outcome"></h3>
+    <h2 id="player-turn"></h2>
+    <!-- <div class="player-one"></div>
+    <div class="player-two"></div> -->
+
+
+
    
     <div class="game-board">
         <!-- Row 1 -->
@@ -65,14 +69,23 @@
             <div class="component"></div>
       
           <!-- Row 6 -->
-         
-            <div class="not-available"></div>
-            <div class="not-available"></div>
-            <div class="not-available"></div>
-            <div class="not-available"></div>
-            <div class="not-available"></div>
-            <div class="not-available"></div>
-            <div class="not-available"></div>
+          <div class="component"></div>
+          <div class="component"></div>
+          <div class="component"></div>
+          <div class="component"></div>
+          <div class="component"></div>
+          <div class="component"></div>
+          <div class="component"></div>
+    
+          
+          <!-- Unavailable entries for token(when token takes up component in div, will pass trough to if statement in js)  -->
+          <div class="not-available"></div>
+          <div class="not-available"></div>
+          <div class="not-available"></div>
+          <div class="not-available"></div>
+          <div class="not-available"></div>
+          <div class="not-available"></div>
+          <div class="not-available"></div>
     
     </div>
 
@@ -96,4 +109,4 @@ text input box for each column-then click functions
 arary of arrays 
 
 what is an event. current target
--->
+ -->

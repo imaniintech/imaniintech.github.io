@@ -10,17 +10,22 @@ body{
     transform: translate(-50%);
     display: flex;
     flex-wrap: wrap; 
-    width: 350px;
-    height: 300px;
+    justify-content: center;
+    width: 400px;
+    height: 370px;
     border: solid 1px white;
     box-shadow: 3px 3px black;
 
 }
 
 .component{
+    position: relative;
+    top: 4px;
     width: 50px;
     height: 50px;
-    background-color: silver;
+    background-color: white;
+    border-radius: 25px;
+    border: solid 1px black;
 }
 
 .player-one{
@@ -44,3 +49,6 @@ h1{
     text-align: center;
 }
 
+#player-turn{
+    font-size: 60px;
+}
