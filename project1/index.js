@@ -1,9 +1,8 @@
 // //Grab the game-board, the components, player and the outcome from html doc to load into JS
 
 
-document.addEventListener('DOMContentLoaded', () => { //listens for when content on dumb has loaded
+document.addEventListener('DOMContentLoaded', () => { 
     let playerTurn = 1; 
-    let gameOver = false;
     const token = document.querySelectorAll('.game-board div');
     const playerOnBoard = document.querySelector('.player-turn');
     const outcome = document.querySelector('.outcome');
@@ -11,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => { //listens for when content
 
 
 
-// create an array of arrays of all possibility of a win in the game board grid 
+// create an array of arrays of all possibilities of a win in the game board
     const winScenarios = [
 
         //Horizontal / reverse
@@ -66,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => { //listens for when content
         [2, 10, 18, 26],
         [34, 26, 18, 10],
         [3, 11, 19, 27]
-
+    ]
 
          /* Layout of game board's grid using index 
         [0,  1,  2,  3,  4,  5,   6]
@@ -76,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => { //listens for when content
         [28, 29, 30, 31, 32, 33, 34]
         [35, 36, 37, 38, 39, 40, 41]
 */
-    ]
+
     
     
      let win = () => {
@@ -118,15 +117,18 @@ document.addEventListener('DOMContentLoaded', () => { //listens for when content
     for (let i = 0; i < token.length; i++){
         token[i].onclick = () => {
           
+         /*when clicked, going to check to see if true that componenet isn't available and if it's not true it's going stop. 
+        has to contain not available in order to move on to next conditional block -receieved assistance from Hannah*/
           if (token[i + 7].classList.contains('not-available') &&!token[i].classList.contains('not-available'))
         // alert('Square ' + i + ' was clicked.')
-        /* the if statement passed through from class non-available in my html that states if the token isn't clicked at i+7 or 7=the last of the grid components, 
-        then the token will not be available */
+
        /* console.log(token[i].classList)
-        if (!token[ i].classList.contains('not-available')) */
-        /*when clicked, going to check to see if true that componenet isn't available and if it's not true it's going stop. has to contain not available in order to move on to nex conditional block*/
+        if (!token[ i].classList.contains('not-available')) 
+        help from phil- seems to fix issue w/ token colors but messes w/ grid*/
+
+       
    
-      //have to put element with ! to reverse the boolean to make statement false
+      
         { 
         
             if (playerTurn === 1) {
@@ -135,7 +137,6 @@ document.addEventListener('DOMContentLoaded', () => { //listens for when content
                 token[i].classList.add('not-available')
                 playerTurn = 2
                 playerOnBoard.innerHTML = playerTurn
-            // console.log(grid)
             }
     
             else if (playerTurn === 2) {
@@ -153,7 +154,6 @@ document.addEventListener('DOMContentLoaded', () => { //listens for when content
         }
     }
 }); 
-//only in event listeners you can pass through e through an event
 
 
 // /// inside loop create if state inside loop if token[i] + this array i+ ?
