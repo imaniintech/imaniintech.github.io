@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
      // to add event listener to token on my grid by using a for loop, I referenced https://stackoverflow.com/questions/8801787/get-index-of-clicked-element-using-pure-javascript 
     //function: for each token in the game board, loop a event listener click to click each token.
-    
+    alert('Player One: Begin')
     for (let i = 0; i < token.length; i++){
         token[i].onclick = () => {
           
@@ -132,11 +132,13 @@ document.addEventListener('DOMContentLoaded', () => {
         { 
         
             if (playerTurn === 1) {
+
             // referenced https://www.youtube.com/watch?v=XYzSyPlY7_E & https://www.youtube.com/watch?v=IKzlUvYSZO4 for adding class in js - classList.add 
                 token[i].classList.add('player-one')
                 token[i].classList.add('not-available')
                 playerTurn = 2
                 playerOnBoard.innerHTML = playerTurn
+                
             }
     
             else if (playerTurn === 2) {
