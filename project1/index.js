@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
 */
 
     
-    
+    // referenced https://stackoverflow.com/questions/32770321/connect-4-check-for-a-win-algorithm to create win fxn
      let win = () => {
         for (let w = 0; w < winScenarios.length; w++){
             const tokenOne= token[winScenarios[w] [0] ]

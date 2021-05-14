@@ -1,2 +1,4 @@
 # Project1-Connect4
-connect 4 game
+<h1>Connect 4</h1>
+
+How to Play
