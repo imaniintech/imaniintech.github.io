@@ -1,35 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 body{
-    background-color: silver;
+  background: linear-gradient(red, orange, pink, pink, orange, red);
+}
+
+h1{
+    font-family: 'Lobster', cursive;
+    font-size: 60px;
+    color: blue;
+    text-align: center;
+    text-shadow: 3px 3px gray;
+}
+
+h2{
+  color: blue;
+  font-family: 'Bebas Neue', cursive;
 }
 
 .game-board{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-    width: 400px;
-    height: 370px;
-    border: solid 1px white;
-    box-shadow: 3px 3px black;
-
+  display: grid;
+  grid-template-columns: repeat(7, 50px);
+  grid-template-rows: repeat(6, 50px);
+  justify-content: center;
+  width: 400px;
+  height: 300px;
+  margin: auto;
+  background-color: blue;
+  box-shadow: 7px 5px 5px gray;
+  
 }
 
 .component{
-    position: relative;
-    top: 4px;
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    border-radius: 25px;
-    border: solid 1px black;
+  border: solid 5px blue;
+  background-color: white;
+  border-radius: 50%;
 }
 
+.component:hover {
+  background-color: pink;
+  
+}
+
+
 .player-one{
-    border-radius: 25px;
+    border-radius: 50%;
     background-color: yellowgreen;
     /* border: solid 1px black; */
     /* ***note to self: make grid little larger if I want to style each token with border (pixels take
@@ -38,17 +54,8 @@ body{
 }
 
 .player-two{
-    border-radius: 25px;
+    border-radius: 50%;
     background-color: tomato;
 }
 
-h1{
-    font-family: 'Lobster', cursive;
-    font-size: 48px;
-    color: olive;
-    text-align: center;
-}
 
-/* #player-turn{
-    font-size: 60px;
-} */

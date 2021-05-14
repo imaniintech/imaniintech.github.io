@@ -1,13 +1,12 @@
-
 // //Grab the game-board, the components, player and the outcome from html doc to load into JS
-let playerTurn = 1;
+
 
 document.addEventListener('DOMContentLoaded', () => { //listens for when content on dumb has loaded
-    const token = document.querySelectorAll('.game-board div')
-    // const tomato = document.querySelector('.player-one')
-    // const yellowGreen = document.querySelector('player-two')
-    const playerOnBoard = document.querySelector('#player-turn')
-    const outcome = document.querySelector('.outcome')
+    let playerTurn = 1; 
+    let gameOver = false;
+    const token = document.querySelectorAll('.game-board div');
+    const playerOnBoard = document.querySelector('.player-turn');
+    const outcome = document.querySelector('.outcome');
 
 
 
@@ -78,8 +77,9 @@ document.addEventListener('DOMContentLoaded', () => { //listens for when content
         [35, 36, 37, 38, 39, 40, 41]
 */
     ]
-
-    let win = () => {
+    
+    
+     let win = () => {
         for (let w = 0; w < winScenarios.length; w++){
             const tokenOne= token[winScenarios[w] [0] ]
             const tokenTwo = token[winScenarios[w] [1] ]
@@ -92,34 +92,38 @@ document.addEventListener('DOMContentLoaded', () => { //listens for when content
                 tokenFour.classList.contains('player-one') 
             )
             {
-                outcome.innerHTML = "Player One is the winner"
+                outcome.innerHTML = "Player One: You Win! Player Two: You Lose!"
             } 
             if (tokenOne.classList.contains('player-two') && 
                 tokenTwo.classList.contains('player-two') && 
                 tokenThree.classList.contains('player-two') && 
                 tokenFour.classList.contains('player-two') 
             ) {
-                outcome.innerHTML = "Player Two is the winner!"
+                outcome.innerHTML = "Player Two: You Win!  Player One: You Lose!"
             }
         }
     }
+
+    
+    
 
 
 
 
  
 
-
      // to add event listener to token on my grid by using a for loop, I referenced https://stackoverflow.com/questions/8801787/get-index-of-clicked-element-using-pure-javascript 
     //function: for each token in the game board, loop a event listener click to click each token.
     
     for (let i = 0; i < token.length; i++){
         token[i].onclick = () => {
+          
+          if (token[i + 7].classList.contains('not-available') &&!token[i].classList.contains('not-available'))
         // alert('Square ' + i + ' was clicked.')
         /* the if statement passed through from class non-available in my html that states if the token isn't clicked at i+7 or 7=the last of the grid components, 
         then the token will not be available */
-        console.log(token[i].classList)
-        if (!token[ i].classList.contains('not-available'))
+       /* console.log(token[i].classList)
+        if (!token[ i].classList.contains('not-available')) */
         /*when clicked, going to check to see if true that componenet isn't available and if it's not true it's going stop. has to contain not available in order to move on to nex conditional block*/
    
       //have to put element with ! to reverse the boolean to make statement false
