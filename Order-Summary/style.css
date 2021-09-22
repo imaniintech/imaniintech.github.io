@@ -34,6 +34,7 @@ h1 {
     overflow: hidden;
     box-shadow: 0 1.5rem 3rem hsl(240,100%,25%, .2);
     padding-bottom: 40px;
+    
 }
 
 
@@ -60,6 +61,7 @@ span {
 .music-plan-container{
     display: flex;
     padding: 10px;
+
     gap: 20px;
     background: #f8f8ff;
     align-items: center;
@@ -78,7 +80,7 @@ span {
 
 .change-link {
     font-family: 'Red Hat Display', sans-serif;
-    color: hsl(245, 75%, 52%);
+    color: #3829E0;
     font-weight: 700;
     font-size: 14px;
 }
