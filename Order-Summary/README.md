@@ -4,7 +4,8 @@
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Desktop Screenshot](#desktop-screenshot)
+  - [Mobile Screenshot](#mobile-screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -18,8 +19,11 @@ Users should be able to:
 
 - See hover states for interactive elements
 
-### Screenshot
+### Desktop Screenshot
+
 <img src="images/screenshot-desktop.png" alt="Screen shot of desktop development for Order Summary design" width="1440"/>
+
+### Mobile Screenshot
 
 <img src="images/mobile-screenshot.png" alt="Screen shot of mobile development for Order Summary design" width="375"/>
 
