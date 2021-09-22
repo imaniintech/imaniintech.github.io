@@ -19,8 +19,8 @@ Users should be able to:
 - See hover states for interactive elements
 
 ### Screenshot
-<img src="images/screenshot-desktop.png" alt="Screen shot of desktop development for Order Summary design"/>
+<img src="images/screenshot-desktop.png" alt="Screen shot of desktop development for Order Summary design" width="700"/>
 
-<img src="images/screenshot-mobile.png" alt="Screen shot of mobile development for Order Summary design"/>
+<img src="images/screenshot-mobile.png" alt="Screen shot of mobile development for Order Summary design" width="375"/>
 
 
