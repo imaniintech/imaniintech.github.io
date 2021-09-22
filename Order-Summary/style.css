@@ -48,8 +48,9 @@ p {
     font-family: 'Red Hat Display', sans-serif;
     font-size: 14px;
     font-weight: 500;
-    color: #8b8989;;
+    color: #8b8989;
 }
+
 
 span {
     color: #000000;
@@ -66,7 +67,7 @@ span {
     background: #f8f8ff;
     align-items: center;
     justify-content: center;
-    margin: auto;
+    margin: 25px;
     max-width: 300px;
     border-radius: 10px;
 }
@@ -83,6 +84,7 @@ span {
     color: #3829E0;
     font-weight: 700;
     font-size: 14px;
+    padding-right: 10px;
 }
 
 .change-link:hover {
@@ -107,9 +109,10 @@ a {
     text-decoration: none;
     background-color: hsl(245, 75%, 52%);
     color: #ffffff;
-    margin: 15px;
+    padding: 15px;
+    margin: 25px;
     border-radius: 10px;
-    box-shadow: 0 15px 15px hsl(240,100%,25%, .3);
+    box-shadow: 0 15px 15px hsl(240,100%,55%, .15);
 
 }
 
