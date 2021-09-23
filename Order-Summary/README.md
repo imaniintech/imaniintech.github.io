@@ -6,7 +6,7 @@
   - [The challenge](#the-challenge)
   - [Desktop Screenshot](#desktop-screenshot)
   - [Mobile Screenshot](#mobile-screenshot)
-  - [Links](#links)
+  - [Link](#link)
 - [My process](#my-process)
   - [Built with](#built-with)
 
@@ -26,5 +26,11 @@ Users should be able to:
 ### Mobile Screenshot
 
 <img src="images/mobile-screenshot.png" alt="Screen shot of mobile development for Order Summary design" width="375"/>
+
+### Live Site Link
+
+- Live Site URL: [Add live site URL here](https://https://imaniintech.github.io/Order-Summary)
+
+
 
 
