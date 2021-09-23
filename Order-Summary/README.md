@@ -9,6 +9,8 @@
   - [Link](#link)
 - [My process](#my-process)
   - [Built with](#built-with)
+- [Author](#author)
+
 
 
 ## Overview
@@ -29,7 +31,22 @@ Users should be able to:
 
 ### Live Site Link
 
-- Live Site URL: [Order Summary Live Site](https://imaniintech.github.io/Order-Summary/){:target="_blank" rel="noopener"}
+- Live Site URL: [Order Summary Live Site](https://imaniintech.github.io/Order-Summary/)
+
+## My process
+
+### Built with
+
+- HTML5 markup
+- CSS custom properties
+- Flexbox
+
+## Author
+
+- Website - [My Portfolio](https://imaniintech.github.io/Portfolio)
+- Twitter - [@imaniintech](https://www.twitter.com/imaniintech)
+
+
 
 
 
