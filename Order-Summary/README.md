@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Live Site Link
 
-- Live Site URL: [Add live site URL here](https://https://imaniintech.github.io/Order-Summary)
+- Live Site URL: [Order Summary](https://imaniintech.github.io/Order-Summary)
 
 
 
