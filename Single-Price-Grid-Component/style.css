@@ -1,0 +1,52 @@
+
+
+.container {
+    display: grid;
+    grid-template-areas: "join join"
+                         "subscribe why-us";
+
+    justify-content: center;
+    /* box-shadow: 0 20px 40px blue; */
+
+    
+    
+}
+
+.join {
+    grid-area: join;
+    background-color: lightgoldenrodyellow;
+    /* background-color: #FFFFFF; */
+}
+
+h1 {
+    color: #00FFFF;
+}
+
+.subscribe {
+    grid-area: subscribe;
+    background-color: lightsalmon;
+}
+
+.why-us {
+    grid-area: why-us;
+    background-color: lightseagreen;
+}
+
+
+
+
+
+
+/* .container {
+    display: flex;
+
+} 
+
+.join{
+    display: flex;
+    flex-direction: column;
+} */
+
+ul {
+    list-style-type: none;
+}
