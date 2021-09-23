@@ -29,7 +29,9 @@ Users should be able to:
 
 ### Live Site Link
 
-- Live Site URL: <a href="https://imaniintech.github.io/Order-Summary/" target="_blank">Order Summary Live Site</a>
+- Live Site URL: [Order Summary Live Site](https://imaniintech.github.io/Order-Summary/){:target="_blank" rel="noopener"}
+
+
 
 
 
