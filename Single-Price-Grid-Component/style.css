@@ -1,52 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400;500;600;700&display=swap');
+
 
 
 .container {
-    display: grid;
-    grid-template-areas: "join join"
-                         "subscribe why-us";
-
-    justify-content: center;
-    /* box-shadow: 0 20px 40px blue; */
-
-    
-    
+    display : grid; 
+    max-width: 700px;
+    margin: auto;
+    box-shadow: 5px 5px 30px #98a6bd;
+    border-radius: 10px;
 }
 
 .join {
-    grid-area: join;
-    background-color: lightgoldenrodyellow;
-    /* background-color: #FFFFFF; */
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 30px;
 }
 
 h1 {
-    color: #00FFFF;
+    color: #2AB1AE;
+    font-weight: 700;
+    font-family: 'Karla', sans-serif;
+}
+
+.guarantee {
+    color: #c0df34;
+    font-weight: 700;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+
+.join-para {
+    color : #C6C6C6;
+    font-weight: 400;
+    font-family: 'Karla', sans-serif;
+    line-height: 1.8;
 }
 
 .subscribe {
-    grid-area: subscribe;
-    background-color: lightsalmon;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 30px;
+    background-color: #2AB1AE;
+    color: #FFFFFF;
+    font-family: 'Karla', sans-serif;
+    border-bottom-left-radius: 10px;
 }
+
+.subscribe-header {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+span {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+
 
 .why-us {
-    grid-area: why-us;
-    background-color: lightseagreen;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding: 30px;
+    background-color: #2FC5C1;
+    color: #FFFFFF;
+    font-family: 'Karla', sans-serif;
+    border-bottom-right-radius: 10px;
 }
 
-
-
-
-
-
-/* .container {
-    display: flex;
-
-} 
-
-.join{
-    display: flex;
-    flex-direction: column;
-} */
+.why-header {
+    font-size: 19px;
+    font-weight: 500;
+}
 
 ul {
     list-style-type: none;
+    padding: 0;
+
 }
+
+li {
+    margin: 4px;
+    opacity: .5;
+}
+
+button {
+    background-color: hsl(71, 73%, 54%);
+    color: #FFFFFF;
+    
+}
+
+
+
