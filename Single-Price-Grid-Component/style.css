@@ -3,14 +3,19 @@
 
 
 .container {
+ 
     display : grid; 
     max-width: 700px;
     margin: auto;
     box-shadow: 5px 5px 30px #98a6bd;
     border-radius: 10px;
+    /* grid-template-areas: 
+        "join join"
+        "subscribe why-us"; */
 }
 
 .join {
+    /* grid-area: join; */
     grid-column-start: 1;
     grid-column-end: 3;
     padding: 30px;
@@ -22,24 +27,26 @@ h1 {
     font-family: 'Karla', sans-serif;
 }
 
-.guarantee {
+.guarantee { 
     color: #c0df34;
-    font-weight: 700;
+    font-weight: 600;
     font-family: 'Karla', sans-serif;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 .join-para {
-    color : #C6C6C6;
-    font-weight: 400;
+    color : #98a6bd;
+    font-weight: 450;
+    font-size: 15px;
     font-family: 'Karla', sans-serif;
-    line-height: 1.8;
+    line-height: 1.6;
 }
 
 .subscribe {
+    /* grid-area: subscribe; */
     grid-column-start: 1;
     grid-column-end: 2;
-    padding: 30px;
+    padding: 30px; 
     background-color: #2AB1AE;
     color: #FFFFFF;
     font-family: 'Karla', sans-serif;
@@ -51,14 +58,23 @@ h1 {
     font-weight: 500;
 }
 
-span {
+.amount {
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 700;
+}
+
+.per-month {
+    opacity: .5;
+}
+
+.access {
+    opacity: .7;
+    font-size: 16px;
 }
 
 
-
 .why-us {
+    /* grid-area: why-us; */
     grid-column-start: 2;
     grid-column-end: 3;
     padding: 30px;
@@ -70,7 +86,7 @@ span {
 
 .why-header {
     font-size: 19px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 ul {
@@ -80,15 +96,29 @@ ul {
 }
 
 li {
-    margin: 4px;
-    opacity: .5;
-}
+    margin: 4.5px;
+    opacity: .6;
+} 
 
 button {
-    background-color: hsl(71, 73%, 54%);
+    background-color: #c0df34;
     color: #FFFFFF;
+    border: none; 
+    width: 270px;
+    height: 50px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 30px #808080;
+}
+
+.sign-up {
+    font-weight: 700;
+    opacity: .8;
+    font-size: 15px;
+    font-family: 'Karla', sans-serif;
     
 }
+
+
 
 
 
