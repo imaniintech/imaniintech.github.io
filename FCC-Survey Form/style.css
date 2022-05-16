@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+
+
+
+
+html{
+  
+  background-image: url('https://i.ibb.co/dWNKPVk/People-Taksim-Square-Turkey-LGBT-pride-parade-June-30-2013.jpg" alt="People-Taksim-Square-Turkey-LGBT-pride-parade-June-30-2013');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+body{
+  opacity: .8;
+}
+
+
+h1{
+  font-family: 'Ranchers', cursive;
+  text-align: center;
+  font-size: 40px;
+  -webkit-text-stroke: 2px whtie;
+}
+
+#title{
+  text-transform: uppercase;
+  text-shadow: -.3rem -.1rem .16rem #000;
+  background-image: linear-gradient(to right,               #86007d, #0000f9, #008018, #ff0018, #ffa52c,             #ffff41);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: .5rem;
+  linear-gradient(-140deg, #86007d, #0000f9, #008018, #ff0018, #ffa52c, #ffff41);
+}
+
+p{
+  text-align: center;
+  font-size: 18px;
+}
+
+#description{
+  font-family: 'Ranchers', cursive;
+  background: linear-gradient(to left, green, yellow, green);
+  max-width: 30rem;
+  margin: auto;
+}
+
+form{
+  width: 50%;
+  margin: 0 auto;
+  padding: 3rem;
+  background-image: linear-gradient(-140deg,         #86007d, #0000f9, #008018, #ff0018, #ffa52c,       #ffff41);
+  box-shadow: .5rem .4rem #585858;
+  border: solid 2px #fff;
+  color: #fff;
+ 
+}
+
+
+label, input{
+ display: flex;
+ align-items: center;
+ }
+
+#number-label, #email-label, #name-label{
+  line-height: 2rem;
+}
+
+
+
+
+ 
+
+
+.comments{
+  text-align: left;
+}
+
+
+text-area{
+  
+}
+
+button{
+  block: flex;
+  width: 100%;
+  background-image: linear-gradient(to right, green, yellow);
+  font-family: 'Ranchers', cursive;
+
+}
+
+
+@media (max-width: 800px){
+  h1{
+    font-size: 30px;
+    text-shadow: -.2rem -.1rem #000;
+  }
+  
+  #description{
+    max-width: 20rem;
+  }
+}
+
+
+
