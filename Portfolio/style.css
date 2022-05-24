@@ -333,7 +333,7 @@ html {
     font-size: 10rem;
     font-weight: 300;
     text-shadow: 2px 2px #000;
-    color: #ddd;
+    color: #dd4962 !important;
 }
 #imani {
     position: absolute;
@@ -349,7 +349,7 @@ html {
 .imani {
     width: 100%;
     height: 70%;
-    box-shadow: 2rem 2rem 2rem rgba(0,0,0,0.6);
+    box-shadow: 2rem 2rem 2rem rgba(0,0,0,0.4);
     border-radius: 50%;
 }
 
@@ -377,12 +377,12 @@ html {
     bottom: 8rem;
     right: 15rem;
     font-size: 2rem;
-    color: #ddd;
+    color: #dd4962;
     border-top: 0.3rem double #aaa;
     border-bottom: 0.3rem double #aaa;
     padding: 2rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: justify;
@@ -413,6 +413,12 @@ html {
     padding-left: 10rem;
 }
 
+.section-heading {
+    /* color: #4fc5e9; */
+    color: rgba(127, 224, 144, 0.767);
+
+    /* color: #2fb646; */
+}
 
 .project-cards-wrapper {
     width: 100%;
@@ -569,7 +575,7 @@ li {
 }
 
 #phonebook {
-    background-color: #14ad14;
+    background-color: #77e977;
 }
 .phonebook {
     width: 100%;
@@ -586,7 +592,8 @@ li {
 .section-4 {
     width: 100%;
     height: 100vh;
-    background-color: #df7f11;
+    /* background-color: #df7f11; */
+    background-color: rgba(48, 177, 70, 0.7);
 
     display: flex;
     align-items: center;
@@ -600,9 +607,8 @@ li {
     align-items: center;
 }
 .contact-color {
-    color: #642530;
+    color: #3f94ad;
 }
-
 .contact-details {
     display: flex;
     margin-bottom: 8rem;
@@ -615,8 +621,8 @@ li {
 }
 
 .contact-details i {
-    font-size: 5rem;
-    color: #642530;
+    font-size: 7rem;
+    color: #3f94ad;
 }
 
 .contact-details h3 {
@@ -627,8 +633,8 @@ li {
 }
 
 .contact-details p {
-    font-size: 1.6rem;
-    color: #aaa;
+    font-size: 2rem;
+    color: #3f94ad;
 }
 
 .contact-wrapper h1 {
