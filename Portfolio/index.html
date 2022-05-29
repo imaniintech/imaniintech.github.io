@@ -7,97 +7,67 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/> -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css"/>
 
-
-    <title>ImaniInTech</title>
-
+    <title>Imani's Portfolio</title>
 </head>
 <body>
-    <!-- Nav Bar -->
-    <nav class="navbar">
-        <div class="logo">
-            <a href="#">
-                <span>I</span>mani<span>I</span>n<span>T</span>ech
-            </a>
-        </div>
-        <div class="nav-list">
-            <a href="#home" class="nav-link">Home</a>
-            <a href="#about-me" class="nav-link">About</a>
-            <a href="#projects" class="nav-link">Projects</a>
-            <!-- <a href="#" class="nav-link">Blog</a> -->
-            <a href="#contact" class="nav-link">Contact</a>
-        </div>
+    <main class="container">
 
-        <!-- Menu --> 
-        <div class="menu">
-            <div class="line line-1"></div>
-            <div class="line line-2"></div>
-            <div class="line line-3"></div>
-        </div>
-        <!-- End of Menu -->
-    </nav>
-    <!-- ENd of Nav Bar -->
-
-    <!--Section 1-->
-    <div class="container">
-        <section class="section-1" id="home">
-            <div class="banner">
-
-                <h1 class="banner-heading">
-                    <span class="heading-1">Software Engineer</span>
-                    <span class="heading-2">Problem Solver</span>
-                    <span class="heading-3">Creative</span>
-                    <span class="heading-4">Innovative</span>
-                </h1>
-
-                <p class="banner-paragraph">Imani Wells</p>  
-                <a href="#projects">
-                    <button class="banner-btn">Featured Projects</button>
-                </a>         
-             </div>
+        <!-- Section 1 -->
+        <section class="section-1">
+            <!-- Logo -->
+            <img class="logo" src="images/wells_logo_black.png" alt="Imani Wells Logo">
+            <!-- Nav Bar -->
+            <nav>
+                <div class="nav">
+                    <a href="#about-me" class="nav-link">About Me</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <!-- <a href="#designs" class="nav-link">Designs</a> -->
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+            </nav>
         </section>
         <!-- End of Section 1 -->
 
-        <!-- Section 2: About Me-->
+
+        <!-- Section 2 -->
         <section class="section-2" id="about-me">
-
-            <h1 class="section-heading-2">Hi, I'm Imani :)</h1>
-            <div id="imani">
-                <img src="images/Imani.jpeg" alt="picture of imani" class="imani">
+            <h1 class="section-2-heading">Imani Wells</h1>
+            <div class="section-2-content">
+                <img src="images/40683846_10216574750510124_5052784618630021120_n.jpg" alt="About Me Photo" class="about-me-photo">
+                <div class="paragraphs">
+                    <p class="paragraph-1">
+                        Curious and motivated professional with experience creating intuitive digital products 
+                        that solve people’s problems. Passionate about innovation and constantly seeking to better 
+                        understand the world, its inhabitants and how technology can improve our everyday lives. 
+                        Currently seeking opportunities in technology.
+                    </p>
+                    <p class="paragraph-1">
+                        Experience with learning to create artistic and functional ways to meet consumer's needs and
+                        devlop solutions. Driven to create products that revolve around 
+                        human experience, expression, and functionality.
+                    </p>
+                    <br><br>
+                    <p class="paragraph-2"><i class="fa-solid fa-quote-left"></i>
+                        “The most opportunity lies on the path we set for ourselves.”
+                        <i class="fa-solid fa-quote-right"></i></p>
+                    <p class="paragraph-2-quote">– Yohancé Salimu</p>
+                </div>
             </div>
-            <p class="section-2-paragraph">
-                <i class="fas fa-quote-left"></i>
-                Curious and motivated professional with experience creating intuitive digital products 
-                that solve people’s problems. Passionate about innovation and constantly seeking to better understand 
-                the world, its inhabitants and how technology can improve our everyday lives. 
-                Currently seeking opportunities in technology.
-                 <i class="fas fa-quote-right"></i>
-            </p>
         </section>
-    </div>
-      <!-- End of Section 2 -->
+        <!-- End of Section 2 -->
 
 
+        <!-- Section 3 -->
+        <section class="section-3" id="projects">
+            <h1 class="section-3-heading">Projects</h1>
 
-
-
-
-    <!-- Section 3: Project Cards-->
-    <section class="section-3" id="projects">
-        <h1 class="section-heading">Projects</h1>
-        <div class="swiper-container">
-        <div class="project-cards-wrapper swiper-wrapper">
-            <!-- Matching Game Card -->
-            <div class="project swiper-slide">
-                <div class="project-card-front" id="matching-game">
-                    <h1 class="project-card-heading heading-matching">Matching Game</h1>
+            <!-- Project Cards -->
+            <div class="project-cards">
+                <!-- Matching Game Card -->
+                <div class="project-card" id="matching-game">
     
-                    <img class="matching-game" src="images/powerpuff_girls.png" alt="powerpuff_snapshot">
+                    <img class="card-photo" src="images/powerpuff_girls.png" alt="powerpuff_snapshot">
                     <ul class="project-card-list list-matching">
                         <li>
                             <i class="fa fa-gamepad"></i>HTML5
@@ -115,18 +85,18 @@
                             <i class="fa fa-gamepad"></i>Responsive Design
                         </li>
                     </ul>
-                    <a href="https://imaniintech.github.io/MatchingGame/" target="_blank">
-                        <button
-                        class="project-card-btn btn-matching">Play Game </button>
-                    </a>
+                    <div class="button-container">
+                        <a href="https://imaniintech.github.io/MatchingGame/" target="_blank">
+                            <button
+                            class="project-card-btn btn-matching">Play Matching Game </button>
+                        </a>
+                    </div>
                 </div>
-            </div>
+        
             <!-- Split Landing Page -->
-            <div class="project swiper-slide">
-                <div class="project-card-front" id="split-page">
-                    <h1 class="project-card-heading heading-split-page">Split Landing Page</h1>
+                <div class="project-card" id="split-page">
     
-                    <img class="split-page" src="images/split landing page.png" alt="landing page snapshot">
+                    <img class="card-photo" src="images/split landing page.png" alt="landing page snapshot">
                     <ul class="project-card-list list-split-page">
                         <li>
                             <i class="fa-solid fa-heart"></i>HTML5
@@ -144,19 +114,19 @@
                             <i class="fa-solid fa-heart"></i>Media Queries
                         </li>
                     </ul>
-                    <a href="https://imaniintech.github.io/NikeSplitLandingPage/" target="_blank">
-                        <button
-                        class="project-card-btn btn-split-page">View Landing Page </button>
-                    </a>
+                    <div class="button-container">
+                        <a href="https://imaniintech.github.io/NikeSplitLandingPage/" target="_blank">
+                            <button
+                            class="project-card-btn btn-split-page">View Landing Page </button>
+                        </a>
+                    </div>
                 </div>
-            </div>
+        
 
             <!-- Phonebook App -->
-            <div class="project swiper-slide">
-                <div class="project-card-front" id="phonebook">
-                    <h1 class="project-card-heading heading-phonebook">Phonebook App</h1>
+                <div class="project-card" id="phonebook">
     
-                    <img class="phonebook" src="images/phonebook app.png" alt="phonebook snapshot">
+                    <img class="card-photo" src="images/phonebook app.png" alt="phonebook snapshot">
                     <ul class="project-card-list list-phonebook">
                         <li>
                             <i class="fa-solid fa-address-book"></i>Bootstrap
@@ -174,62 +144,64 @@
                             <i class="fa-solid fa-address-book"></i>Express
                         </li>
                     </ul>
-                    <a href="https://phonebook-frontend-project3.herokuapp.com/" target="_blank">
-                        <button
-                        class="project-card-btn btn-phonebook">Use Phonebook</button>
-                    </a>
+                    <div class="button-container">
+                        <a href="https://phonebook-frontend-project3.herokuapp.com/" target="_blank">
+                            <button
+                            class="project-card-btn btn-phonebook">Use Phonebook</button>
+                        </a>
+                    </div>
+                </div> 
+            </div>       
+        </section>
+        <!-- End of Section 3 -->
+
+
+        <!-- Section 4 -->
+        <section class="section-4" id="contact">
+            <h1 class="section-4-heading">Contact Me</h1>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="phone">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Phone</h3>
+                        <p class="contact-details">
+                            +1 216 804 0458
+                        </p>
+                    </div>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p class="contact-details">
+                            Cleveland, Ohio
+                        </p>
+                    </div>
+                    <div class="email">
+                        <i class="far fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p class="contact-details">
+                            imaniintech@gmail.com
+                        </p>
+                    </div>
                 </div>
-            </div>            
-       
-        </div>
-    </section>
-     <!-- End of Section 3 -->
-
-
-
-     
-     <!-- Section 4 -->
-     <section class="section-4" id="contact">
-         <h1 class="section-heading contact-color">Contact</h1>
-         <div class="contact-wrapper">
-             <div class="contact-details">
-                 <div class="phone">
-                     <i class="fas fa-mobile-alt"></i>
-                     <h3>Phone</h3>
-                     <p class="con-color">+1 216 804 0458</p>
-                 </div>
-                 <div class="address">
-                     <i class="fas fa-map-marker-alt"></i>
-                     <h3>Location</h3>
-                     <p class="con-color">Cleveland, Ohio</p>
-                 </div>
-                 <div class="email">
-                     <i class="far fa-envelope"></i>
-                     <h3>Email</h3>
-                     <p class="con-color">imaniintech@gmail.com</p>
-                 </div>
-                 </div>
             </div>
-         </div>
-     </section>
 
-     <!-- Footer -->
-     <footer class="footer">
-         <div class="footer-nav">
-             <a href="#home">Home</a>
-             <a href="#about-me">About Me</a>
-             <a href="#projects">Projects</a>
-             <a href="#contact">Contact</a>
-        </div>
-        <p class="copyright">
-            Copyright &copy; ImaniInTech : All Rights Reserved
-        </p>
-     </footer>
-     <!-- End of Footer -->
+        </section>
+        <!-- End of Section 4 -->
 
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <a href="#about-me">About Me</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p class="copyright">
+                Copyright &copy; ImaniInTech : All Rights Reserved
+            </p>
+        </footer>
+    <!-- End of Footer -->
 
-    <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="script.js"></script>
+    </main>
 </body>
 </html>
