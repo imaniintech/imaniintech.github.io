@@ -23,11 +23,12 @@ html, body {
     justify-content: space-between;
     width: 100vw;
     height: 14vh;
+    background-repeat: ;
 }
 
 .logo {
-    /* width: 150px; */
-    height: 130px;
+    width: 150px;
+    height: 100%;
 }
 
 .nav {
@@ -40,7 +41,7 @@ html, body {
     list-style: none;
     text-decoration: none;
     font-family: 'Koulen', cursive;
-    font-size: 30px;
+    font-size: 30px;s
 }
 .nav-link:hover {
     color: #808000;
@@ -310,18 +311,18 @@ a {
 
 /* End of Footer  */
 @media (max-width: 1440px) {
-    .logo {
+    /* .logo {
         height: 120px;
-    }
+    } */
 }
 
 @media (max-width: 1024px) {
     .about-me-photo {
         height: 30vh;
     }
-    .logo {
+    /* .logo {
         height: 110px;
-    }
+    } */
     
 }
 
