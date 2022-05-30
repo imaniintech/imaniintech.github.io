@@ -348,13 +348,6 @@ a {
     .nav-link {
         font-size: 18px;
     }
-    .logo {
-        height: 100px;
-    }
-    /* .section-2 {
-        display: flex;
-        justify-content: center;
-    } */
     .section-2-content {
         display: flex;
         flex-direction: column;
