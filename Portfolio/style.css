@@ -311,6 +311,32 @@ a {
 }
 
 /* End of Footer  */
+@media (max-width: 2560px) {
+    .section-2-heading {
+        font-size: 150px;
+    }
+    .paragraph-1 {
+        font-size: 40px;
+        line-height: 35px;
+    }
+    .paragraph-2 {
+        font-size: 25px;
+    }
+    .paragraph-2-quote {
+        font-size: 25px;
+    }
+    .section-3-heading {
+        font-size: 150px;
+    }
+    .project-cards {
+        gap: 150px;
+    }
+    .section-4-heading {
+        font-size: 150px;
+    }
+}
+
+
 @media (max-width: 1440px) {
     /* .logo {
         height: 120px;
@@ -318,9 +344,9 @@ a {
 }
 
 @media (max-width: 1024px) {
-    .about-me-photo {
+    /* .about-me-photo {
         height: 30vh;
-    }
+    } */
     /* .logo {
         height: 110px;
     } */
@@ -329,9 +355,9 @@ a {
 
 
 @media (max-width: 768px) {
-    .about-me-photo {
+    /* .about-me-photo {
         height: 26vh;
-    }
+    } */
     .phone {
         font-size: 25px;
     }
@@ -357,7 +383,12 @@ a {
     .section-2-heading {
         font-size: 50px;
     }
+    /* .about-me-photo {
+        height: 26vh;
+    } */
     .paragraph-1 {
+        display: flex;
+        align-items: center;
         font-size: 12px;
         width: 200px;
     }
