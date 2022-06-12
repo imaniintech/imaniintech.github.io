@@ -1,7 +1,7 @@
 # Tic Tac Toe
 
 
-## UI Breakdown
+### UI Breakdown
 - Title
 - 3x3 Grid
     - Grid is clickable
@@ -13,7 +13,7 @@
 - Restart
     - Button that will restart the game
 
-## Game Flow Breakdown for Cell Clicks
+### Game Flow Breakdown for Cell Clicks
 - When a cell is clicked, it needs to be traccked
 - When a cell is clicked, needs to check if the click made is a valid move
     - If there is already a choice in the cell, need to make sure the choice can't be overriden
