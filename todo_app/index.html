@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>To Do App</title>
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="main.css">
+    <!-- <link rel="stylesheet" href="minimalist_main.css"> -->
+    <!-- your JavaScript logic -->
+    <script src="app.js" charset="utf-8" defer></script>
+  </head>
+  <body>
+    <div id="container">
+      <h1>To Do List</h1>
+      <div id="input-container">
+        <!-- input and input button -->
+        <label for="input-box"></label>
+        <input type="text" name="" value="" id="input-box">
+        <button class="add" type="button" name="button" id="submit">ADD TASK</button>
+      </div>
+      <!-- Container for both lists -->
+      <div id="lists">
+        <!-- left list, things added should have a class of `to-do-item` to get the css -->
+        <div id="to-do-list">
+          <h2>Tasks To Complete</h2>
+        </div>
+        <!-- right list, things added should have a class of `completed` -->
+        <div id="completed">
+          <h2>Completed Tasks</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
