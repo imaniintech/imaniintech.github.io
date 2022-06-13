@@ -1,6 +1,6 @@
 # Tic Tac Toe
 
-<img src="images/tictactoe.png" alt="Image of Tic Tac Toe Design" width=500px height=500px>
+<img src="images/tictactoe.png" alt="Image of Tic Tac Toe Design" width=500px height=550px>
 
 ### UI Breakdown
 - Title
