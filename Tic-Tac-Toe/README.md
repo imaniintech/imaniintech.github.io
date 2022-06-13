@@ -1,5 +1,6 @@
 # Tic Tac Toe
 
+![Image of TicTacToe Design](/images/tictactoe.png)
 
 ### UI Breakdown
 - Title
