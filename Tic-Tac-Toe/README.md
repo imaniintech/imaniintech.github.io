@@ -2,6 +2,14 @@
 
 <img src="images/tictactoe.png" alt="Image of Tic Tac Toe Design" width=500px height=550px>
 
+### Technologies Used
+- HTML5
+- CSS3
+- JavaScript
+- CSS Grid
+- Flexbox
+- Google Font API
+
 ### UI Breakdown
 - Title
 - 3x3 Grid
