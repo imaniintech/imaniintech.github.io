@@ -1,6 +1,6 @@
 # Tic Tac Toe
 
-![Image of TicTacToe Design](/images/tictactoe.png)
+<img src="images/tictactoe.png" alt="Image of Tic Tac Toe Design">
 
 ### UI Breakdown
 - Title
