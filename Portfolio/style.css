@@ -23,7 +23,7 @@ html, body {
     justify-content: space-between;
     width: 100vw;
     height: 14vh;
-    background-repeat: ;
+    background-repeat: no-repeat;
 }
 
 /* .logo {
@@ -42,7 +42,7 @@ html, body {
     list-style: none;
     text-decoration: none;
     font-family: 'Koulen', cursive;
-    font-size: 30px;s
+    font-size: 30px;
 }
 .nav-link:hover {
     color: #808000;
