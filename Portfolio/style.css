@@ -142,7 +142,7 @@ li {
 }
 .project-card {
     width: 400px;
-    height: 600px;
+    height: 650px;
     background-color: #313030;
     border-radius: 15px;
     box-shadow: 8px 6px 2px #111;
@@ -164,7 +164,17 @@ li {
     font-size: 15px;
     font-weight: 500;
 }
+.list-tictactoe li {
+    color: #c721b9;
+    font-size: 15px;
+    font-weight: 500;
+}
 .list-split-page li {
+    color: #2785b1;
+    font-size: 15px;
+    font-weight: 500;
+}
+.list-order li {
     color: #2785b1;
     font-size: 15px;
     font-weight: 500;
@@ -174,13 +184,17 @@ li {
     font-size: 15px;
     font-weight: 500;
 }
-.list-premium li {
-    color:#3be286;
+.list-todo li {
+    color: #ffa500; 
+    font-size: 15px;
+    font-weight: 500;
 }
+
 
 .project-card-list i {
     font-size: 1.8rem;
-    width: 3rem
+    width: 3rem;
+    padding-top: 7px;
 }
 .project-card-list span {
     font-size: 1.8rem;
@@ -201,20 +215,41 @@ li {
 }
 .button-container {
     display: flex;
-    justify-content: center;
-    padding-top: 20px;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
 }
 
 
 .btn-matching {
     background: linear-gradient(70deg, #c721b9, #0da5d3, #c721b9);
 }
+.btn-tictactoe {
+    background: linear-gradient(70deg, #c721b9, #0da5d3, #c721b9);
+}
 .btn-split-page {
+    background: linear-gradient(70deg, #bdba0e, #c552b2, #bdba0e);
+}
+.btn-order {
     background: linear-gradient(70deg, #bdba0e, #c552b2, #bdba0e);
 }
 .btn-phonebook {
     background: linear-gradient(70deg, #a04901, #ffa500, #a04901);
 }
+.btn-todo {
+    background: linear-gradient(70deg, #a04901, #ffa500, #a04901);
+}
+
+.code {
+    text-decoration: none;
+}
+.code:hover {
+    color: rgba(255, 0, 0, 0.8);
+}
+
+
+
 /* End of Section 3 */
 
 
@@ -252,19 +287,19 @@ li {
     gap: 100px;
 }
 .phone {
-    background: -webkit-linear-gradient(#fff,#c0c0c0, #000);
+    background: -webkit-linear-gradient(#fff,#c0c0c0, #fff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 30px;
 }
 .location {
-    background: -webkit-linear-gradient(#fff,#c0c0c0, #000);
+    background: -webkit-linear-gradient(#fff,#c0c0c0, #fff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 30px;
 }
 .email {
-    background: -webkit-linear-gradient(#fff,#c0c0c0, #000);
+    background: -webkit-linear-gradient(#fff,#c0c0c0, #fff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 30px;
@@ -338,18 +373,19 @@ a {
 
 
 @media (max-width: 1440px) {
-    /* .logo {
-        height: 120px;
-    } */
+    .about-me-photo {
+        width: 650px;
+        height: 800px;
+    }
 }
 
 @media (max-width: 1024px) {
-    /* .about-me-photo {
-        height: 30vh;
-    } */
-    /* .logo {
-        height: 110px;
-    } */
+    .paragraph-1 {
+        font-size: 20px;
+    }
+    .paragraph-2 {
+        font-size: 18px;
+    }
     
 }
 
@@ -358,6 +394,15 @@ a {
     /* .about-me-photo {
         height: 26vh;
     } */
+    .paragraph-1 {
+        padding-right: 20px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .paragraph-2 {
+        padding-right: 20px;
+        font-size: 16px;
+    }
     .phone {
         font-size: 25px;
     }
