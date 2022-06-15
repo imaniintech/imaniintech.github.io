@@ -11,6 +11,7 @@
 - Google Font API
 
 ### UI Breakdown
+<img src="images/wireframe.png" alt="Wireframe for Tic Tac Toe Game">
 - Title
 - 3x3 Grid
     - Grid is clickable
