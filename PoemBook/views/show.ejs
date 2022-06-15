@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Show Poem</title>
+</head>
+<body>
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title">
+                <%= poem.title %>
+            </h1>
+            
+            <div class="card-text mb-4">
+                <%= poem.content %>
+            </div>
+    
+            <a href="/poems" class="show btn btn-secondary mr-5">Show All Poems</a>
+            <a href="/poems/<%= poem.id %>/edit" class="edit btn btn-dark">Edit Poem</a>
+    
+            </div>
+        </div>
+
+  
+</body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+
+    body{
+        background-color: #000;
+    }
+    h1{
+        font-family: 'Limelight', cursive;
+        font-size: 60px;
+        text-shadow: 3px 2px lightgray;
+        text-transform: uppercase;
+    }
+    .create{
+        background-image: linear-gradient(45deg, black, gray, grey,  black);
+        color: white;
+    }
+    .card{
+        background-image: linear-gradient(45deg, black, gray, white, black);
+        text-align: center;
+    }
+    .card-title{
+        color: black;
+    }
+    .card-text{
+        background-color: black;
+        opacity: .5;
+        color: white;
+    }
+    .show{
+        background-image: linear-gradient(45deg, black, gray, grey,  black);
+        color: white;
+    }
+    .edit{
+        background-image: linear-gradient(45deg, black, gray, grey,  black);
+        color: white;
+    }
+    
+</style>
+</html>

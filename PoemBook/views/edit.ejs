@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Edit poem</title>
+</head>
+<body>
+
+    <div id="book-image" class="card">
+        <div class="card-body">
+        <h3 class="mb-5">Edit Poem</h3>
+        <a href="https://ibb.co/6sTRzn9"><img class="book-image" src="https://i.ibb.co/GP8vyxY/1495749805-Black-Book-PNG-Clip-Art.png" alt="1495749805-Black-Book-PNG-Clip-Art" width="100"></a>
+             <form action="/poems/<%= poem.id %>?_method=PUT" method="post">
+                <div class="card">
+                    <div class="card-body">
+
+                <nav class="mb-5">
+                    <button class="cancel btn btn-outline-secondary" ><a href="/poems">Back to Poem Book</a></button>
+                </nav>
+                
+                <div class="card-title form-group mb-3">
+                    <input type = "text" name = "title" id = "title" placeholder="Title"/>
+                </div>
+
+                <div class="card-subtitle form-group mb-3">
+                    <textarea name="tags" id="tags" class="form-control" placeholder="Descriptive Tags" required></textarea>
+                </div>
+
+                <div class="card-text mb-3 form-group">
+                    <textarea name="content" id="content" cols="30" rows="10" class="form-control" placeholder="Poem's content" required></textarea>
+                </div>
+            </div>
+
+            <div class="form-group ml-4">
+                <input type = "submit" class="create" value = "Click to Create Poem"> 
+            </div>
+        </div> 
+
+            </form>
+        </div>
+    </div>
+</body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+
+    body{
+        background-color: #000;
+    }
+    h3{
+        font-family: 'Limelight', cursive;
+        font-size: 60px;
+        color: black;
+        text-shadow: 3px 3px lightgray;
+        text-transform: uppercase;
+    }
+    .card{
+        background-image: linear-gradient(45deg, black, gray, white, black);
+    }
+    .card-title{
+        color: white;
+    }
+    .card-text{
+        color: white;
+    }
+    label{
+        color: white;
+    }
+    .create{
+        background-image: linear-gradient(45deg, black, gray, grey,  black);
+        color: white;
+    }
+    .cancel{
+        background-image: linear-gradient(45deg, black, gray, grey,  black);
+        margin-bottom: 10px;
+    }
+    a{
+        color: white;
+    }
+    #book-image {
+  position:relative;
+    }
+
+    .book-image {
+        position:absolute;
+        top:0;
+        right:600px;
+    }
+</style>
+</html>
