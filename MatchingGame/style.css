@@ -3,11 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html,body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    }
 body {
     display: flex;
     height: 100vh;
     background-image: linear-gradient(45deg, pink, purple, pink, purple, pink);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .logo {
@@ -62,4 +68,37 @@ img {
 
 .front-face {
     transform: rotateY(180deg);
+}
+
+
+
+@media (max-width: 1024px) {
+    .logo {
+        width: 450px;
+    }
+    .memory-game {
+        padding-right: 20px;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo {
+        width: 400px;
+    }
+    .memory-game {
+        width: 90vw;
+        padding-right: 20px;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .logo {
+        width: 300px;
+    }
 }
