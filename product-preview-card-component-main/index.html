@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">  
   
   <title>Frontend Mentor | Product preview card component</title>
 
@@ -15,22 +18,51 @@
   </style>
 </head>
 <body>
+  <main class="main-container">
 
-  Preview
-
-  Gabrielle Essence Eau De Parfum
-
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
-
-  $149.99
-  $169.99
-
-  Add to Cart
+    <section>
+      <div class="img-container">
+        <!-- <img src="images/image-product-desktop.jpg" alt="Picture of House of Chanel Perfume" class="photo"> -->
+      </div>
   
-  <div class="attribution">
+      <div class="content">
+        <h4>P E R F U M E</h4>
+  
+        <h1>Gabrielle Essence Eau De Parfum</h1>
+  
+  
+  
+  
+        <p class="para">
+          A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+          Perfumer-Creator for the House of CHANEL.
+        </p>
+  
+        <div class="prices">
+          <span class="new-price">$149.99</span>
+          <span class="old-price">$169.99</span>
+        </div>
+  
+        <div class="button">
+          <button>
+            <!-- <img class="cart" src="images/icon-cart.svg" alt="Shopping Cart Icon"> -->
+            <i class="fa-solid fa-cart-shopping"></i>
+            Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Imani Wells</a>.
+    </div>
+  </main>
+  
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#">Imani Wells</a>.
+  </div> -->
+
+
 </body>
 </html>
